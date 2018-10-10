@@ -20,7 +20,7 @@
   ]
 */
 
-const pascalsTriange = num => {
+const pascalsTriangle = num => {
   if (num === 0) {
     return []
   } else if (num === 1) {
@@ -30,6 +30,7 @@ const pascalsTriange = num => {
 
     for (let i = 0; i < num; i++) {
       let row = [] // Reset our row; this will hold our new row that will be pushed into the solution array
+      
       for (let j = 0; j < i + 1; j++) {
         if (j === 0 || j === i) {
           row.push(1)
